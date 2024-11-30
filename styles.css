@@ -219,8 +219,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
-    border-radius: 8px;
+    padding: 0.75rem;
+    border-radius: 24px;
     background: var(--color-secondary);
     transition: opacity 0.3s ease;
 }
@@ -230,8 +230,8 @@ h1 {
 }
 
 .x-logo {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 /* About Section */
