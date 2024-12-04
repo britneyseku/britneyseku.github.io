@@ -239,8 +239,10 @@ h1 {
 /* About Section */
 .about {
     background: linear-gradient(180deg, #371722 0%, #844F61 100%);
-    padding: 120px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 60px 0;
+    border: none;
+    margin-bottom: 0px;
+    box-shadow: none;
 }
 
 .section-wrapper {
@@ -318,8 +320,10 @@ h1 {
 
 /* Publications Section */
 .publications {
-    padding: var(--section-spacing) 0;
-    background: #371722;
+    background: linear-gradient(180deg, #844F61 0%, #371722 100%);
+    padding: 60px 0;
+    border: none;
+    margin-bottom: 0;
 }
 
 .publications-content {
@@ -372,11 +376,22 @@ h1 {
     text-transform: uppercase;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.status-tag:hover {
+    transform: translateY(-2px);
 }
 
 .status-tag.under-review,
 .status-tag.in-prep {
     background: linear-gradient(135deg, var(--color-secondary) 0%, #9A6B7C 100%);
+    color: var(--color-text);
+}
+
+.status-tag.preprint {
+    background: var(--color-primary);
     color: var(--color-text);
 }
 
@@ -645,8 +660,10 @@ h1 {
 
 /* Presentations Section */
 .presentations {
-    background: #844F61;
-    padding: var(--section-spacing) 0;
+    background: linear-gradient(180deg, #371722 0%, #844F61 100%);
+    padding: 60px 0;
+    border: none;
+    margin-top: 0px;
 }
 
 .presentations-content {
@@ -809,10 +826,16 @@ h1 {
 }
 
 /* Text Styling */
-.emphasis-link {
+.about .emphasis-link {
     font-weight: 500;
     text-decoration: underline;
     cursor: pointer;
+    color: #FFFFFF;
+    transition: opacity 0.3s ease;
+}
+
+.about .emphasis-link:hover {
+    opacity: 0.8;
 }
 
 .social-link {
